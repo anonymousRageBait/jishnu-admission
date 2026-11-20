@@ -1,0 +1,34 @@
+# ─────────────────────────────────────────────────────────────
+#  Keep raw credentials, PII, and payment receipts OUT of git.
+#  Only index.html (encrypted) and api/news.js should be public.
+# ─────────────────────────────────────────────────────────────
+
+# Raw per-university data (passwords, applicant IDs, receipts)
+DU/
+KUET/
+RU/
+BUET/
+RUET/
+SUST/
+
+# Core personal info and images
+information.txt
+images/
+
+# Build artifacts and prior-conversation exports
+*.md
+!README.md
+Screenshot*.png
+*.jpeg
+*.jpg
+*.png
+
+# Local / editor cruft
+.DS_Store
+.vscode/
+.idea/
+*.log
+node_modules/
+.vercel
+.env
+.env.*
